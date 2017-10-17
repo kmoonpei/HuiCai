@@ -10,6 +10,7 @@ import { TabsPage } from '../pages/tabs/tabs';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { HomeModule } from '../pages/home/home.module';
+import { DrowingBoardModule } from '../pages/home/series/series.module'
 
 @NgModule({
   declarations: [
@@ -20,8 +21,9 @@ import { HomeModule } from '../pages/home/home.module';
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp),
-    HomeModule
+    IonicModule.forRoot(MyApp,{tabsHideOnSubPages: 'true'}),
+    HomeModule,
+    DrowingBoardModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [

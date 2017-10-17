@@ -1,28 +1,26 @@
 import { NgModule, ErrorHandler } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
-import { HomePage } from './home';
-import { SeriesPage } from './series/series';
-
+import { SeriesPage } from './series';
+import { DrowingBoardPage } from './drowing-board/drowing-board';
  
 
 
 @NgModule({
   imports: [
     BrowserModule,
-    IonicModule
+    IonicModule,
   ],
   declarations: [
-    HomePage,
-    SeriesPage
+    DrowingBoardPage
   ],
   entryComponents: [
-    HomePage,
-    SeriesPage
+    SeriesPage,
+    DrowingBoardPage
   ],
   providers: [
     
   ],
   exports: [IonicModule]
 })
-export class HomeModule {}
+export class DrowingBoardModule {}

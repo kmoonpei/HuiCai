@@ -38,3 +38,23 @@ page-home {
        
     }
 }
+
+@media (max-width: 320px) {
+    page-home {
+        ion-content.content {
+            ul {
+                
+                li {
+                    .bg-item {
+                        height: 120px;
+            
+                        .title-item {
+                            height: 30px;
+                            line-height: 30px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
