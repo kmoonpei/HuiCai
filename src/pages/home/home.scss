@@ -1,0 +1,40 @@
+page-home {
+    * {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        font-family: "Microsoft YaHei";
+    }
+    ion-content {
+        ul {
+            width: 100%;
+            li {
+                float: left;
+                margin: 1%;
+                width: 48%;
+                .bg-item {
+                    position: relative;
+                    // width: 150px;
+                    height: 160px;
+                    border-radius: 8px;
+                    background-color: rgb(231, 169, 243);
+        
+                    .title-item {
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        margin-top: -17px; 
+                        margin-left: -60px;
+                        width: 120px;
+                        height: 35px;
+                        line-height: 35px;
+                        text-align: center;
+                        background-color: rgba(255, 255, 255,.5);
+                    }
+                }
+            }
+        }
+
+       
+    }
+}
