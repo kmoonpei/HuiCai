@@ -6,7 +6,7 @@
 <ion-content>
     <div class="wrap">
         <div class="topbar">
-            <div class="pallet"></div>
+            <div (click)="showPallet()" class="pallet"></div>
             <div class="pen">
                 <ul>
                     <li><div class="circle s1"></div></li>
@@ -18,5 +18,5 @@
             </div>
         </div>
     </div>
-    
+    <!-- <page-change-color *ngIf='isShowColorBoard'></page-change-color> -->
 </ion-content>

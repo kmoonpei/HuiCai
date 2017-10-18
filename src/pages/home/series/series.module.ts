@@ -23,4 +23,4 @@ import { DrowingBoardPage } from './drowing-board/drowing-board';
   ],
   exports: [IonicModule]
 })
-export class DrowingBoardModule {}
+export class SeriesModule {}

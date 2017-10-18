@@ -9,8 +9,11 @@ import { TabsPage } from '../pages/tabs/tabs';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+import { Dialogs } from '@ionic-native/dialogs';
 import { HomeModule } from '../pages/home/home.module';
-import { DrowingBoardModule } from '../pages/home/series/series.module'
+import { SeriesModule } from '../pages/home/series/series.module';
+// import { DrowingBoardModule } from '../pages/home/series/drowing-board/drowing-board.module';
+
 
 @NgModule({
   declarations: [
@@ -23,7 +26,8 @@ import { DrowingBoardModule } from '../pages/home/series/series.module'
     BrowserModule,
     IonicModule.forRoot(MyApp,{tabsHideOnSubPages: 'true'}),
     HomeModule,
-    DrowingBoardModule
+    SeriesModule,
+    // DrowingBoardModule,
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -35,6 +39,7 @@ import { DrowingBoardModule } from '../pages/home/series/series.module'
   providers: [
     StatusBar,
     SplashScreen,
+    Dialogs,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
