@@ -13,7 +13,7 @@ import { SeriesPage } from './series/series';
     IonicModule
   ],
   declarations: [
-    HomePage,
+    // HomePage,
     SeriesPage
   ],
   entryComponents: [

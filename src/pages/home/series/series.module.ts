@@ -12,11 +12,11 @@ import { DrowingBoardPage } from './drowing-board/drowing-board';
     IonicModule,
   ],
   declarations: [
-    DrowingBoardPage
+    // DrowingBoardPage
   ],
   entryComponents: [
     SeriesPage,
-    DrowingBoardPage
+    // DrowingBoardPage
   ],
   providers: [
     

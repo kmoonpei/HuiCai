@@ -12,14 +12,13 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { Dialogs } from '@ionic-native/dialogs';
 import { HomeModule } from '../pages/home/home.module';
 import { SeriesModule } from '../pages/home/series/series.module';
-// import { DrowingBoardModule } from '../pages/home/series/drowing-board/drowing-board.module';
-
+import { DrowingBoardModule } from '../pages/home/series/drowing-board/drowing-board.module';
 
 @NgModule({
   declarations: [
     MyApp,
     ContactPage,
-    // HomePage,
+    HomePage,
     TabsPage
   ],
   imports: [
@@ -27,13 +26,13 @@ import { SeriesModule } from '../pages/home/series/series.module';
     IonicModule.forRoot(MyApp,{tabsHideOnSubPages: 'true'}),
     HomeModule,
     SeriesModule,
-    // DrowingBoardModule,
+    DrowingBoardModule,
   ],
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
     ContactPage,
-    // HomePage,
+    HomePage,
     TabsPage
   ],
   providers: [

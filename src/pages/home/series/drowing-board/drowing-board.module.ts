@@ -1,22 +1,26 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { IonicApp, IonicModule, IonicErrorHandler, IonicPageModule } from 'ionic-angular';
-import { ChangeColorPage } from './change-color/change-color';
 import { DrowingBoardPage } from './drowing-board';
-
+import { ChangeColorComponent } from '../../../../components/change-color/change-color'
+import { PalletComponent } from '../../../../components/pallet/pallet'
 
 @NgModule({
   declarations: [
-    ChangeColorPage,
+    DrowingBoardPage,
+    ChangeColorComponent,
+    PalletComponent
   ],
   imports: [
-    // IonicPageModule.forChild(StudentPage),
-    ChangeColorPage,
-    // IonicPageModule.forChild(ChangeColorPage),
+    IonicPageModule.forChild(DrowingBoardPage),
   ],
   entryComponents: [
-    ChangeColorPage,
-    DrowingBoardPage
+    DrowingBoardPage,
+    ChangeColorComponent,
+    PalletComponent
   ],
+  exports: [
+
+  ]
 })
 export class DrowingBoardModule {}
